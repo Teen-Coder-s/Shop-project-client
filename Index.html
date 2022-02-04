@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>مو تن رو</title>
+        <link rel="stylesheet" href="./Styles/Index.css">
+        <link rel="stylesheet" href="./Styles/basic-styles.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    </head>
+    <body>
+        <div class="black__back"></div>
+        
+        <header>
+            <div class="coantiner">
+                <div class="header__wrapper">
+                    <div class="header__logo">
+                        <a href="Index.html">
+                            <img src="./Images/Logo.png" alt="فروشگاه اینترنتی مو تن رو" class="logo__img">
+                        </a>
+                    </div>
+
+                    <div class="header__cols">
+                        <div class="header__colFirst">
+                            <div class="products_categories">
+                                <i class="fas fa-bars" id="bars_icon"></i>
+                                <p>دسته بندی محصولات</p>
+                            </div>
+                            <a href="#"><p class="brands">برندها</p></a>
+                            <a href="#"><p class="amazing_offers">پیشنهاد های شگفت انگیز</p></a>
+                        </div>
+
+                        <div class="header__colSecond">
+                            <input type="text" class="search_input" placeholder="محصول، دسته و یا برند موردنظرتان را جستجو کنید...">
+                            <button class="search_button"><i class="fal fa-search" id="search_icon"></i></button>
+                        </div>
+
+                        <div class="header__colThird">
+                            <i class="fas fa-user" id="user_profile"></i>
+                            <i class="fas fa-shopping-cart" id="shopping_basket"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="header__thumbs">
+            <div class="link__pics">
+                <img src="./Images/Thumbs/0362747_sp-10-desk.jpeg" class="link__pic">
+                <img src="./Images/Thumbs/0362748_sp1-10-desk.jpeg" class="link__pic">
+            </div>
+    
+            <div class="slide__pictures">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="./Images/Thumbs/0362360_slider-5-desk.jpeg" style="border-radius: 10px;" id="slide__pic">
+                    </div>
+                </div>
+                <div class="points">
+                    <span class="point"></span>
+                    <span class="point"></span>
+                    <span class="point"></span>
+                    <span class="point"></span>
+                    <span class="point show"></span>
+                </div>
+            </div>
+        </div>
+
+        <script src="./Scripts/slider.js"></script>
+        <script src="./Scripts/blackBack.js"></script>
+    </body>
+</html>
