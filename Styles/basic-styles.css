@@ -22,6 +22,11 @@
     font-family: "Vazir-variable";
     src: url(./../Font/Vazir-Variable.woff2);
 }
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
 
 body {
     margin: 0;
