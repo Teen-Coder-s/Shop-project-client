@@ -1,2 +1,2 @@
 # Shop-project-client
-for front
+for front-end
