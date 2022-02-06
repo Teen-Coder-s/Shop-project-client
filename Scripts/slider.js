@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const swiper = new Swiper('.swiper-header', {
     loop: true,
     lazy: true,
@@ -15,7 +14,6 @@ const swiper = new Swiper('.swiper-header', {
       clickable: true,
     },
   });
-=======
 
 // let slideIndex = 0
 // let timer = 1000
@@ -57,30 +55,29 @@ const swiper = new Swiper('.swiper-header', {
 // })
 
 
-let pictures = ["./Images/Thumbs/0362360_slider-5-desk.jpeg", "./images/Thumbs/0362357_slider-4-desk.jpeg", "./images/Thumbs/0362356_slider-3-desk.jpeg", "./images/Thumbs/0362353_slider-2-desk.jpeg", "./Images/Thumbs/0362557_slider-1-desk-min.jpeg"]
-let picIndex = 1
-let slidePic = document.querySelector("#slide__pic")
-let points = document.querySelectorAll(".point")
+// let pictures = ["./Images/Thumbs/0362360_slider-5-desk.jpeg", "./images/Thumbs/0362357_slider-4-desk.jpeg", "./images/Thumbs/0362356_slider-3-desk.jpeg", "./images/Thumbs/0362353_slider-2-desk.jpeg", "./Images/Thumbs/0362557_slider-1-desk-min.jpeg"]
+// let picIndex = 1
+// let slidePic = document.querySelector("#slide__pic")
+// let points = document.querySelectorAll(".point")
 
-function goNext() {
-    if (picIndex < pictures.length) {
-        slidePic.src = pictures[picIndex]
-        picIndex += 1
-    } else {
-        slidePic.src = pictures[0]
-        picIndex = 1
-    }
+// function goNext() {
+//     if (picIndex < pictures.length) {
+//         slidePic.src = pictures[picIndex]
+//         picIndex += 1
+//     } else {
+//         slidePic.src = pictures[0]
+//         picIndex = 1
+//     }
 
-    points.forEach(point => {
-        point.classList.remove("show")
-        points[picIndex-1].classList.add("show")
-    });
-}
+//     points.forEach(point => {
+//         point.classList.remove("show")
+//         points[picIndex-1].classList.add("show")
+//     });
+// }
 
-let runSlides = setInterval(() => {
-    goNext()
-}, 3000);
+// let runSlides = setInterval(() => {
+//     goNext()
+// }, 3000);
 
-slidePic.addEventListener("mouseover" , e => clearInterval(runSlides))
-slidePic.addEventListener("mouseleave" , e => runSlides = setInterval (goNext , 3000))
->>>>>>> 9f484378e3d453fcb19ff74f08191cdea0b091ce
+// slidePic.addEventListener("mouseover" , e => clearInterval(runSlides))
+// slidePic.addEventListener("mouseleave" , e => runSlides = setInterval (goNext , 3000))
