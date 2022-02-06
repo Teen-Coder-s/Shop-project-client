@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="//db.onlinewebfonts.com/c/1510aa80463174b1d0847ab936a70e8e?family=IRANYekanWeb" rel="stylesheet" type="text/css"/> 
     <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <link rel="stylesheet" href="Styles/products.css">
     <link rel="stylesheet" href="Styles/basic-styles.css">
 </head>
@@ -48,5 +49,159 @@
             </div>
         </div>
     </header>
+    <main>
+    	<div class="container">
+    		<section class="products-filter_section">
+                <div class="filter">
+                    <div class="filter_header">
+                        <h3 class="filter_title">
+                            جستجو در نتایج
+                        </h3>
+                        <i class="filter_dropdown_icon fas fa-angle-down"></i>
+                    </div>
+                    <div class="filter_body filter_hidden">
+                        <form class="filter_search">
+                            <input type="search" class="filter_search_input" placeholder="نام محصول یا برند مورد نظر خود را تایپ کنید...">
+                            <button type="submit" class="filter_search_button">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="filter">
+                    <div class="filter_header">
+                        <h3 class="filter_title">
+                            برند
+                        </h3>
+                        <i class="filter_dropdown_icon fas fa-angle-down"></i>
+                    </div>
+                    <div class="filter_body filter_hidden">
+                        <form class="filter_search">
+                            <input type="search" class="filter_search_input" placeholder="جستجو نام برند...">
+                            <button type="submit" class="filter_search_button">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                        <ul class="checkbox_list">
+                            <li class="checkbox">
+                                <input type="checkbox" class="simple-checkbox" id="بیو">
+                                <label for="بیو">بیو</label>
+                            </li>
+                            <li class="checkbox">
+                                <input type="checkbox" class="simple-checkbox" id="بورژوا">
+                                <label for="بورژوا">بورژوا</label>
+                            </li>
+                            <li class="checkbox">
+                                <input type="checkbox" class="simple-checkbox" id="ماوالا">
+                                <label for="ماوالا">ماوالا</label>
+                            </li>
+                            <li class="checkbox">
+                                <input type="checkbox" class="simple-checkbox" id="این لی">
+                                <label for="این لی">این لی</label>
+                            </li>
+                            <li class="checkbox">
+                                <input type="checkbox" class="simple-checkbox" id="لورال">
+                                <label for="لورال">لورال</label>
+                            </li>
+                            <li class="checkbox">
+                                <input type="checkbox" class="simple-checkbox" id="مک">
+                                <label for="مک">مک</label>
+                            </li>
+                            <li class="checkbox">
+                                <input type="checkbox" class="simple-checkbox" id="دبورا">
+                                <label for="دبورا">دبورا</label>
+                            </li>
+                            <li class="checkbox">
+                                <input type="checkbox" class="simple-checkbox" id="رولون">
+                                <label for="رولون">رولون</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="filter">
+                    <div class="filter_header">
+                        <h3 class="filter_title">
+                            محدوه قیمت
+                        </h3>
+                        <i class="filter_dropdown_icon fas fa-angle-down"></i>
+                    </div>
+                    <div class="filter_body filter_hidden">
+                        <div class="price-range">
+                            از <input type="text" class="price-filter-input"> تومان تا <input type="text" class="price-filter-input"> تومان
+                        </div>
+                        <button class="set_price_range">
+                             اعمال محدوده قیمت 
+                        </button>
+                    </div>
+                </div>
+                <div class="filter">
+                    <div class="filter_header">
+                        <h3 class="filter_title">
+                            درمان (کارکرد)
+                        </h3>
+                        <i class="filter_dropdown_icon fas fa-angle-down"></i>
+                    </div>
+                    <div class="filter_body filter_hidden">
+                        <form class="filter_search">
+                            <input type="search" class="filter_search_input" placeholder="جستجو درمان ...">
+                            <button type="submit" class="filter_search_button">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                        <ul class="checkbox_list">
+                            <li class="checkbox">
+                                <input type="checkbox" class="simple-checkbox" id="حجم دهنده">
+                                <label for="حجم دهنده">حجم دهنده </label>
+                            </li>
+                            <li class="checkbox">
+                                <input type="checkbox" class="simple-checkbox" id="ضد حساسیت">
+                                <label for="ضد حساسیت">ضد حساسیت </label>
+                            </li>
+                            <li class="checkbox">
+                                <input type="checkbox" class="simple-checkbox" id="مرطوب کننده">
+                                <label for="مرطوب کننده">مرطوب کننده </label>
+                            </li>
+                            <li class="checkbox">
+                                <input type="checkbox" class="simple-checkbox" id="بلند کننده">
+                                <label for="بلند کننده">بلند کننده </label>
+                            </li>
+                            <li class="checkbox">
+                                <input type="checkbox" class="simple-checkbox" id="حالت دهنده">
+                                <label for="حالت دهنده">حالت دهنده </label>
+                            </li>
+                            <li class="checkbox">
+                                <input type="checkbox" class="simple-checkbox" id="تقویت کننده">
+                                <label for="تقویت کننده">تقویت کننده</label>
+                            </li>
+                            <li class="checkbox">
+                                <input type="checkbox" class="simple-checkbox" id="ویتامینه">
+                                <label for="ویتامینه">ویتامینه</label>
+                            </li>
+                            <li class="checkbox">
+                                <input type="checkbox" class="simple-checkbox" id="ضد چروک">
+                                <label for="ضد چروک">ضد چروک</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="toggle-filter" style="justify-content: flex-start;">
+                    <div class="toggle-box">
+                        <input type="checkbox" class="toggle-checkbox">
+                        <span class="toggle-button"></span>
+                    </div>
+                    <h3 class="filter_title">فقط کالاهای موجود</h3>
+                </div>
+                <div class="toggle-filter" style="justify-content: flex-start;">
+                    <div class="toggle-box">
+                        <input type="checkbox" class="toggle-checkbox">
+                        <span class="toggle-button"></span>
+                    </div>
+                    <h3 class="filter_title">فقط کالاهای ارسال رایگان</h3>
+                </div>
+    		</section>
+    	</div>
+    </main>
+    <script src="Scripts/filter-dropbox.js"></script>
+    <script src="Scripts/double-range.js"></script>
 </body>
 </html>
