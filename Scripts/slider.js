@@ -39,8 +39,8 @@
 // })
 
 
-let pictures = ["./Images/Thumbs/0362360_slider-5-desk.jpeg", "./Images/Thumbs/0362357_slider-4-desk.jpeg", "./Images/Thumbs/0362356_slider-3-desk.jpeg", "./Images/Thumbs/0362353_slider-2-desk.jpeg", "./Images/Thumbs/0362557_slider-1-desk-min.jpeg"]
-let picIndex = 0
+let pictures = ["./Images/Thumbs/0362360_slider-5-desk.jpeg", "./images/Thumbs/0362357_slider-4-desk.jpeg", "./images/Thumbs/0362356_slider-3-desk.jpeg", "./images/Thumbs/0362353_slider-2-desk.jpeg", "./Images/Thumbs/0362557_slider-1-desk-min.jpeg"]
+let picIndex = 1
 let slidePic = document.querySelector("#slide__pic")
 let points = document.querySelectorAll(".point")
 
@@ -50,22 +50,15 @@ function goNext() {
         picIndex += 1
     } else {
         slidePic.src = pictures[0]
-        picIndex = 0
+        picIndex = 1
     }
 
     points.forEach(point => {
         point.classList.remove("show")
-        points[picIndex].classList.add("show")
+        points[picIndex-1].classList.add("show")
     });
 }
-points.forEach((point, ind) => {
-    point.addEventListener('click', () => {
-        points[picIndex].classList.remove("show")
-        points[ind].classList.add("show")
-        picIndex = ind
-        slidePic.src = pictures[picIndex]
-    })
-})
+
 let runSlides = setInterval(() => {
     goNext()
 }, 3000);
