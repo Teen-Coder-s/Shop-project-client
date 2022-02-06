@@ -46,6 +46,10 @@ time, mark, audio, video {
     border: 0;
     vertical-align: baseline;
 }
+
+a {
+    text-decoration: none;
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -88,98 +92,120 @@ header {
     padding-bottom: 30px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, .05);
 }
-.container {
-    width: 98%;
+/* .container {
+    width: 100%;
     margin: auto;
-}
+} */
+
 .header__wrapper {
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .logo__img {
     width: 80px;
     /* height: 30px; */
 }
+
 .header__logo {
     margin-top: 15px;
     display: inline;
 }
+
 .header__cols {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-around;
     width: 100%;
     padding: 0 20px;
+    margin-top: 20px; */
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    margin-top: 20px;
 }
+
 .header__colFirst ,
 .header__colSecond ,
 .header__colThird {
     display: flex;
     align-items: center;
-    font-family: "Vazir-medium";
+    font-family: "Vazir-variable";
 }
-.header__colFirst a,
-.header__colSecond a,
-.header__colThird a {
-    text-decoration: none;
-}
+
 .products_categories {
     display: flex;
     align-items: center;
 }
+
 .products_categories p{
     font-size: 16px;
     color: gray;
     user-select: none;
 }
+
 .brands {
-    font-size: 16px;
+    font-size: .7rem;
     color: #fff;
     user-select: none;
     background-color: #2B2D42;
-    padding: 5px 10px;
-    border-radius: 10px;
-    margin: 0 30px;
+    padding: 8px 11px;
+    border-radius: 12px;
+    margin: 0 15px;
     transition: .11s;
 }
+
 .brands:hover {
     background-color: #8D99AE;
 }
+
 .amazing_offers {
     animation: tik-tok .6s infinite;
     animation-direction: alternate;
-    border-radius: 10px;
+    border-radius: 12px;
     transition: .3s ease, .3s ease;
-    padding: 3px 8px;
-    border: 2px solid #EF233C;
+    padding: 6px 12px;
+    border: 1px solid #EF233C;
     user-select: none;
 }
+
+.amazing_offers_text {
+    font-size: 0.8rem;
+}
+
 .amazing_offers:hover {
     animation: none;
     background-color: #EF233C;
     color: #fff;
 }
+
 .search_input {
     width: 350px;
     border: none;
     background-color: #eee;
-    border-radius: 0 16px 16px 0;
+    border-radius: 0 21px 21px 0;
     outline: 0;
     padding: 9px 15px;
     font-family: "Vazir-regular";
-    font-size: 16px;
+    font-size: 13px;
+    font-weight: 200;
     color: #000;
     display: flex;
     align-items: center;
+    justify-content: center;
     z-index: 100;
 }
+
 .search_button {
     width: 50px;
-    height: 44px;
-    border-radius: 16px 0 0 16px;
+    height: 39px;
+    border-radius: 21px 0 0 21px;
     margin-right: -1px;
     background-color: #EF233C;
+    cursor: pointer;
     z-index: 100;
     border: none;
 }
@@ -191,29 +217,34 @@ header {
     font-size: 24px;
     margin: 10px;
 }
+
 #bars_icon:hover {
     color: #000;
 }
+
 #search_icon {
     color: #fff;
     font-size: 25px;
     transition: .1s;
     width: 100%;
 }
+
 #user_profile {
     font-size: 22px;
     margin: 0 8px;
     border-radius: 5px;
     color: #2B2D42;
-    transition: .11s;
+    transition: .2s;
 }
+
 #shopping_basket {
     font-size: 22px;
     margin: 0 8px;
     color: #2B2D42;
     border-radius: 5px;
-    transition: .11s;
+    transition: .2s;
 }
+
 #shopping_basket:hover ,
 #user_profile:hover {
     color: #8D99AE;
@@ -227,15 +258,18 @@ header {
         color: #EF233C;
         background-color: transparent;
     }
+
     49% {
         border-color: #EF233C;
         color: #EF233C;
         background-color: transparent;
     }
+
     51% {
         color: #fff;
         background-color: #EF233C;
     }
+
     100% {
         color: #fff;
         background-color: #EF233C;

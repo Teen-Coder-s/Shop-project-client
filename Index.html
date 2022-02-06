@@ -7,6 +7,7 @@
         <title>مو تن رو</title>
         <link rel="stylesheet" href="./Styles/Index.css">
         <link rel="stylesheet" href="./Styles/basic-styles.css">
+        <link rel="stylesheet" href="./Styles/swiper-bundle.min.css">
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     </head>
     <body>
@@ -28,7 +29,7 @@
                                 <p>دسته بندی محصولات</p>
                             </div>
                             <a href="#"><p class="brands">برندها</p></a>
-                            <a href="#"><p class="amazing_offers">پیشنهاد های شگفت انگیز</p></a>
+                            <a href="#"><div class="amazing_offers"><p class="amazing_offers_text">پیشنهاد های شگفت انگیز</p></div></a>
                         </div>
 
                         <div class="header__colSecond">
@@ -47,26 +48,22 @@
 
         <div class="header__thumbs">
             <div class="link__pics">
-                <img src="./Images/Thumbs/0362747_sp-10-desk.jpeg" class="link__pic">
-                <img src="./Images/Thumbs/0362748_sp1-10-desk.jpeg" class="link__pic">
+                <img src="./Images/Thumbs/banner1.jpeg" class="link__pic">
+                <img src="./Images/Thumbs/banner2.jpeg" class="link__pic">
             </div>
-    
-            <div class="slide__pictures">
-                <div class="slides">
-                    <div class="slide">
-                        <img src="./Images/Thumbs/0362360_slider-5-desk.jpeg" style="border-radius: 10px;" id="slide__pic">
-                    </div>
+            <div class="swiper swiper-header">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./Images/Thumbs/slider1.jpeg"></div>
+                  <div class="swiper-slide"><img src="./Images/Thumbs/slider2.jpeg"></div>
+                  <div class="swiper-slide"><img src="./Images/Thumbs/slider3.jpeg"></div>
+                  <div class="swiper-slide"><img src="./Images/Thumbs/slider4.jpeg"></div>
+                  <div class="swiper-slide"><img src="./Images/Thumbs/slider5.jpeg"></div>
                 </div>
-                <div class="points">
-                    <span class="point"></span>
-                    <span class="point"></span>
-                    <span class="point"></span>
-                    <span class="point"></span>
-                    <span class="point show"></span>
-                </div>
-            </div>
+                <div class="swiper-pagination"></div>
+              </div>
         </div>
 
+        <script src="./Scripts/swiper-bundle.min.js"></script>
         <script src="./Scripts/slider.js"></script>
         <script src="./Scripts/blackBack.js"></script>
     </body>
