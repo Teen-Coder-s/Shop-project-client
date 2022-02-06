@@ -44,12 +44,8 @@ time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
+    font-family: "vazir";
     vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-    display: block;
 }
 body {
     line-height: 1;
@@ -87,8 +83,9 @@ header {
     padding-bottom: 30px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, .05);
 }
-.coantiner {
-    width: 100%;
+.container {
+    width: 97%;
+    margin: auto;
 }
 .header__wrapper {
     width: 100%;
