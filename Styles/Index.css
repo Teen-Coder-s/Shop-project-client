@@ -1,12 +1,8 @@
 .header__thumbs {
     width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-.header__thumbs {
-    width: 100%;
     height: 300px;
     display: flex;
+    justify-content: space-around;
 }
 .link__pics {
     width: 30%;
@@ -30,12 +26,10 @@
 }
 .swiper-header {
     width: 60%;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    position: relative;
-    border-radius: 10px;
+    height: 565px;
+    position: absolute;
+    top: -48px;
+    border-radius: 20px;
 }
 
 .swiper-pagination-bullet-active {
@@ -258,10 +252,6 @@
     transition: .12s linear;
 }
 
-.swiper-slide-active {
-    border: 1px solid #dbdbdb;
-}
-
 .swiper-slide {
     display: flex;
     justify-content: center;
@@ -324,4 +314,33 @@
 .card-btn:hover .real-price {
     color: #fff;
     transition: .1s linear;
+}
+
+.section-banner {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.banner1 {
+    width: 48%;
+    margin-right: 20px;
+}
+
+.banner2 {
+    width: 48%;
+    margin-left: 20px;
+}
+
+.banner1 img{
+    width: 100%;
+    border-radius: 30px;
+}
+
+.banner2 img{
+    width: 100%;
+    border-radius: 30px;
 }

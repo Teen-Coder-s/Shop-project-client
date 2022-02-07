@@ -31,10 +31,6 @@ const offroozSwiper = new Swiper('.swiper-offrooz', {
     el: '.swiper-pagination',
     clickable: true,
   },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
 });
 
 const selectedSliderSwiper = new Swiper('.swiper-selected', {
@@ -44,9 +40,6 @@ const selectedSliderSwiper = new Swiper('.swiper-selected', {
   autoplay: {
       delay: 4000,
       disableOnInteraction: false,
-  },
-  keyboard: {
-      enabled: true,
   },
 });
 
