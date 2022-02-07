@@ -40,6 +40,14 @@
 }
 .swiper-pagination-bullet-active {
     background-color: #D90429 !important;
-    width: 20px !important;
+    width: 25px !important;
     border-radius: 4px !important;
+    box-shadow: 0 0px 4px 1px #e60d31 !important;
+}
+.swiper-slide-img {
+    height: 100%;
+    display: block;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 }
