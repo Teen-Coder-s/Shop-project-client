@@ -13,7 +13,42 @@ const swiper = new Swiper('.swiper-header', {
       el: '.swiper-pagination',
       clickable: true,
     },
-  });
+});
+
+const offroozSwiper = new Swiper('.swiper-offrooz', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
+  lazy: true,
+  autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+  },
+  keyboard: {
+      enabled: true,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+const selectedSliderSwiper = new Swiper('.swiper-selected', {
+  effect: "fade",
+  loop: true,
+  lazy: true,
+  autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+  },
+  keyboard: {
+      enabled: true,
+  },
+});
 
 // let slideIndex = 0
 // let timer = 1000

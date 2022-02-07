@@ -26,6 +26,7 @@
     margin: 0;
     padding: 0;
     border: none;
+    font-family: "vazir";
 }
 
 html, body, div, span, applet, object, iframe,
@@ -50,6 +51,11 @@ time, mark, audio, video {
 body {
     line-height: 1;
 }
+
+a {
+    text-decoration: none;
+}
+
 ol, ul {
     list-style: none;
 }
@@ -147,17 +153,15 @@ header {
     animation-direction: alternate;
     border-radius: 12px;
     transition: .3s ease, .3s ease;
-    padding: 6px 9px;
+    padding: 8px 13px;
     border: 1px solid #EF233C;
+    font-size: 0.8rem;
     user-select: none;
 }
 .amazing_offers:hover {
     animation: none;
     background-color: #EF233C;
     color: #fff;
-}
-.amazing_offers_text {
-    font-size: 0.8rem;
 }
 .search_input {
     width: 450px;
@@ -190,6 +194,7 @@ header {
     left: 48px;
     z-index: 101;
     padding: 0 15px;
+    cursor: pointer;
 }
 #search_icon:hover {
     color: #000;
