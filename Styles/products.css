@@ -143,15 +143,20 @@ label {
 	position: relative;
 	width: 3rem;
 	height: 1.5rem;
-	background-color: #8D99AE;
 	margin: 0 1rem;
 	border-radius: 1rem;
+	overflow: hidden;
 }
 .toggle-checkbox {
 	position: absolute;
 	appearance: none;
 	width: 100%;
 	height: 100%;
+	background-color: #8D99AE;
+	transition: 0.2s;
+}
+.toggle-checkbox:checked {
+	background-color: #3888ff;
 }
 .toggle-checkbox:checked + .toggle-button {
 	right: 1.5rem;
