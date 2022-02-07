@@ -44,16 +44,8 @@ time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
+    font-family: "vazir";
     vertical-align: baseline;
-}
-
-a {
-    text-decoration: none;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-    display: block;
 }
 body {
     line-height: 1;
@@ -73,12 +65,11 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
 body {
     margin: 0;
     padding: 0;
     border: none;
-    background-color: #f6f6f6;
+    background-color: #EDF2F4;
 }
 header {
     background-color: #FFF;
@@ -92,117 +83,91 @@ header {
     padding-bottom: 30px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, .05);
 }
-
 .container {
-    width: 100%;
+    width: 97%;
     margin: auto;
 }
-
 .header__wrapper {
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-
 .logo__img {
-    width: 80px;
-    /* height: 30px; */
+    width: 120px;
+    height: 30px;
 }
-
 .header__logo {
-    margin-top: 15px;
-    display: inline;
+    margin: 15px 0 5px 0 !important;
+    width: 100%;
+    text-align: center;
 }
-
 .header__cols {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     padding: 0 20px;
-    margin-top: 20px;
 }
-
 .header__colFirst ,
 .header__colSecond ,
 .header__colThird {
     display: flex;
     align-items: center;
-    font-family: "Vazir-variable";
+    font-family: "Vazir-medium";
 }
-
+.header__colFirst a,
+.header__colSecond a,
+.header__colThird a {
+    text-decoration: none;
+}
 .products_categories {
     display: flex;
     align-items: center;
 }
-
 .products_categories p{
     font-size: 16px;
     color: gray;
     user-select: none;
 }
-
 .brands {
-    font-size: .7rem;
+    font-size: 16px;
     color: #fff;
     user-select: none;
     background-color: #2B2D42;
-    padding: 8px 11px;
-    border-radius: 12px;
-    margin: 0 15px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 0 30px;
     transition: .11s;
 }
-
 .brands:hover {
     background-color: #8D99AE;
 }
-
 .amazing_offers {
     animation: tik-tok .6s infinite;
     animation-direction: alternate;
-    border-radius: 12px;
+    border-radius: 10px;
     transition: .3s ease, .3s ease;
-    padding: 6px 12px;
-    border: 1px solid #EF233C;
+    padding: 3px 8px;
+    border: 2px solid #EF233C;
     user-select: none;
 }
-
-.amazing_offers_text {
-    font-size: 0.8rem;
-}
-
 .amazing_offers:hover {
     animation: none;
     background-color: #EF233C;
     color: #fff;
 }
-
 .search_input {
-    width: 350px;
-    border: none;
-    background-color: #eee;
-    border-radius: 0 21px 21px 0;
+    width: 450px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
     outline: 0;
-    padding: 9px 15px;
+    padding: 7px 15px 7px 45px;
     font-family: "Vazir-regular";
-    font-size: 13px;
-    font-weight: 200;
+    font-size: 16px;
     color: #000;
     display: flex;
     align-items: center;
-    justify-content: center;
     z-index: 100;
-}
-
-.search_button {
-    width: 50px;
-    height: 39px;
-    border-radius: 21px 0 0 21px;
-    margin-right: -1px;
-    background-color: #EF233C;
-    cursor: pointer;
-    z-index: 100;
-    border: none;
 }
 
 
@@ -212,34 +177,37 @@ header {
     font-size: 24px;
     margin: 10px;
 }
-
 #bars_icon:hover {
     color: #000;
 }
-
 #search_icon {
-    color: #fff;
-    font-size: 25px;
-    transition: .1s;
-    width: 100%;
+    font-size: 21px;
+    color: gray;
+    position: relative;
+    left: 48px;
+    z-index: 101;
+    padding: 0 15px;
 }
-
+#search_icon:hover {
+    color: #000;
+}
 #user_profile {
-    font-size: 22px;
-    margin: 0 8px;
+    font-size: 24px;
+    color: #fff;
+    padding: 10px 13px;
     border-radius: 5px;
     color: #2B2D42;
-    transition: .2s;
+    transition: .11s;
 }
-
 #shopping_basket {
-    font-size: 22px;
-    margin: 0 8px;
+    font-size: 24px;
+    color: #fff;
+    margin: 0 20px 0 0;
     color: #2B2D42;
+    padding: 10px 12px 10px 8px;
     border-radius: 5px;
-    transition: .2s;
+    transition: .11s;
 }
-
 #shopping_basket:hover ,
 #user_profile:hover {
     color: #8D99AE;
@@ -253,18 +221,15 @@ header {
         color: #EF233C;
         background-color: transparent;
     }
-
     49% {
         border-color: #EF233C;
         color: #EF233C;
         background-color: transparent;
     }
-
     51% {
         color: #fff;
         background-color: #EF233C;
     }
-
     100% {
         color: #fff;
         background-color: #EF233C;

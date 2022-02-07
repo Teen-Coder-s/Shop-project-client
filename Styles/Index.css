@@ -1,3 +1,4 @@
+
 .header__thumbs {
     width: 100%;
     display: flex;
@@ -38,7 +39,7 @@
     border-radius: 10px;
 }
 .swiper-pagination-bullet-active {
-	background-color: #D90429 !important;
+    background-color: #D90429 !important;
     width: 20px !important;
     border-radius: 4px !important;
 }
