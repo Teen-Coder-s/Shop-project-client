@@ -403,15 +403,15 @@
 }
 
 .swiper-slide-best-sell {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .swiper-slide-best-sell:hover {
@@ -464,16 +464,106 @@
 }
 
 .fa-percentage-1 {
-    font-size: 18px;
-    border: none;
-    position: absolute;
-    top: 50px;
-    right: 30px;
-    border: 1px solid #d90429;
-    opacity: 0;
+  font-size: 18px;
+  border: none;
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  border: 1px solid #d90429;
+  opacity: 0;
 }
 
 .card-link:hover .fa-percentage-1 {
-    opacity: 1;
-    transition: .2s linear;
+  opacity: 1;
+  transition: 0.2s linear;
+}
+
+/* Section Offer Motan */
+
+.offer-motan {
+  margin-top: 60px;
+}
+
+.offer-motan-header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 0 30px;
+}
+
+.offer-motan-header-title {
+  color: #585858;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.offer-motan-content {
+  margin-top: 20px;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.swiper-offer-motan {
+  display: flex;
+  padding: 20px !important;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.swiper-slide-offer-motan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide-offer-motan:hover {
+  border: 1px solid #e0e0e0;
+}
+
+/* Winter Skin Care */
+
+.winter-skin-care {
+  margin-top: 60px;
+}
+
+.winter-skin-care-header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 0 30px;
+}
+
+.winter-skin-care-title {
+  color: #585858;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.winter-skin-care-content {
+  margin-top: 20px;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.swiper-winter-skin-care {
+  display: flex;
+  padding: 20px !important;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.swiper-slide-winter-skin-care {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide-winter-skin-care:hover {
+  border: 1px solid #e0e0e0;
 }

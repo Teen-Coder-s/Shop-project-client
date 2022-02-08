@@ -51,6 +51,22 @@ const bestProductSelling = new Swiper('.swiper-best-selling', {
   },
 });
 
+const offtermotan = new Swiper('.swiper-offer-motan', {
+  lazy: true,
+  slidesPerView: 7.5,
+  keyboard: {
+    enabled: true,
+  },
+});
+
+const winterSkinCare = new Swiper('.swiper-winter-skin-care', {
+  lazy: true,
+  slidesPerView: 7.5,
+  keyboard: {
+    enabled: true,
+  },
+});
+
 // let slideIndex = 0
 // let timer = 1000
 
