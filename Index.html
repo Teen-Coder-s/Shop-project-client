@@ -1,430 +1,1105 @@
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>مو تن رو</title>
-        <link rel="stylesheet" href="./Styles/Index.css">
-        <link rel="stylesheet" href="./Styles/basic-styles.css">
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
-        <link rel="stylesheet" href="./Styles/swiper-bundle.min.css"> 
-    </head>
-    <body>
-        <div class="black__back"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مو تن رو</title>
+    <link rel="stylesheet" href="./Styles/Index.css" />
+    <link rel="stylesheet" href="./Styles/basic-styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" href="./Styles/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <div class="black__back"></div>
 
-        <header>
-            <div class="coantiner">
-                <div class="header__wrapper">
-                    <div class="header__logo">
-                        <a href="Index.html">
-                            <img src="./Images/Logo.png" alt="فروشگاه اینترنتی مو تن رو" class="logo__img">
+    <header>
+      <div class="coantiner">
+        <div class="header__wrapper">
+          <div class="header__logo">
+            <a href="Index.html">
+              <img
+                src="./Images/Logo.png"
+                alt="فروشگاه اینترنتی مو تن رو"
+                class="logo__img"
+              />
+            </a>
+          </div>
+
+          <div class="header__cols">
+            <div class="header__colFirst">
+              <div class="products_categories">
+                <i class="fas fa-bars" id="bars_icon"></i>
+                <p>دسته بندی محصولات</p>
+              </div>
+              <a href="#"><p class="brands">برندها</p></a>
+              <a href="#"
+                ><p class="amazing_offers">پیشنهاد های شگفت انگیز</p></a
+              >
+            </div>
+
+            <div class="header__colSecond">
+              <input
+                type="text"
+                class="search_input"
+                placeholder="محصول، دسته و یا برند موردنظرتان را جستجو کنید..."
+              />
+              <i class="fal fa-search" id="search_icon"></i>
+            </div>
+
+            <div class="header__colThird">
+              <i class="fas fa-user" id="user_profile"></i>
+              <i class="fas fa-shopping-cart" id="shopping_basket"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="header-slider">
+      <div class="header__thumbs">
+        <div class="link__pics">
+          <img src="./Images/Thumbs/banner1.jpeg" class="link__pic" />
+          <img src="./Images/Thumbs/banner2.jpeg" class="link__pic" />
+        </div>
+        <div class="swiper swiper-header">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="swiper-slide-img"
+                ><img src="./Images/Thumbs/slider1.jpeg"
+              /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="swiper-slide-img"
+                ><img src="./Images/Thumbs/slider2.jpeg"
+              /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="swiper-slide-img"
+                ><img src="./Images/Thumbs/slider3.jpeg"
+              /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="swiper-slide-img"
+                ><img src="./Images/Thumbs/slider4.jpeg"
+              /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="swiper-slide-img"
+                ><img src="./Images/Thumbs/slider5.jpeg"
+              /></a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <section style="overflow-x: hidden" class="section-offrooz">
+      <div class="offrooz">
+        <div class="offrooz-header">
+          <div class="offrooz-top">
+            <div class="offrooz-title">
+              <i class="fas fa-percentage"></i>
+              <img src="./Images/Thumbs/offrooz.svg" alt="offrooz icon" />
+              <div class="offrooz-timer">
+                <div class="counter" id="offroozCounter">
+                  <div class="counter-wraper">
+                    <div class="counter-circle counter-seconds">
+                      <div class="count-circle">
+                        <div class="count-value" id="countValueSeconds"></div>
+                      </div>
+                    </div>
+                    <span class="both-dot">:</span>
+                    <div class="counter-circle counter-minutes">
+                      <div class="count-circle">
+                        <div class="count-value" id="countValueMinutes"></div>
+                      </div>
+                    </div>
+                    <span class="both-dot">:</span>
+                    <div class="counter-circle counter-hours">
+                      <div class="count-circle">
+                        <div class="count-value" id="countValueHours"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="see-all-text">مشاهده همه</a>
+          </div>
+        </div>
+        <div class="offrooz-content">
+          <div class="selected-product">
+            <div class="swiper swiper-selected">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="slider-card">
+                    <div class="card-discounts">
+                      <div class="card-percent">
+                        <small>%</small>
+                        ۳۵
+                      </div>
+                    </div>
+                    <div class="card-selected-content">
+                      <div class="card-selected-img">
+                        <a href="#"
+                          ><img src="./Images/Thumbs/sliderProduct1.jpeg"
+                        /></a>
+                      </div>
+                      <div class="card-selected-title">
+                        <a href="#" class="card-selected-text">
+                          شامپو روزانه لافارر مناسب موهای چرب
                         </a>
+                      </div>
                     </div>
-
-                    <div class="header__cols">
-                        <div class="header__colFirst">
-                            <div class="products_categories">
-                                <i class="fas fa-bars" id="bars_icon"></i>
-                                <p>دسته بندی محصولات</p>
-                            </div>
-                            <a href="#"><p class="brands">برندها</p></a>
-                            <a href="#"><p class="amazing_offers">پیشنهاد های شگفت انگیز</p></a>
+                    <div class="card-selected-footer">
+                      <div class="card-selected-price">
+                        <div class="card-real-price">۲۰۴٬۰۰۰</div>
+                        <div class="card-off-price">
+                          ۱۰۰٬۰۰۰
+                          <small>تومان</small>
                         </div>
-
-                        <div class="header__colSecond">
-                            <input type="text" class="search_input" placeholder="محصول، دسته و یا برند موردنظرتان را جستجو کنید...">
-                            <i class="fal fa-search" id="search_icon"></i>
-                        </div>
-
-                        <div class="header__colThird">
-                            <i class="fas fa-user" id="user_profile"></i>
-                            <i class="fas fa-shopping-cart" id="shopping_basket"></i>
-                        </div>
+                      </div>
+                      <div class="btn-selected-footer">
+                        <a class="card-selected-btn" href="#">مشاهده و خرید</a>
+                      </div>
                     </div>
+                  </div>
                 </div>
+                <div class="swiper-slide">
+                  <div class="slider-card">
+                    <div class="card-discounts">
+                      <div class="card-percent">
+                        <small>%</small>
+                        ۱۵
+                      </div>
+                    </div>
+                    <div class="card-selected-content">
+                      <div class="card-selected-img">
+                        <a href="#"
+                          ><img src="./Images/Thumbs/sliderProduct2.jpeg"
+                        /></a>
+                      </div>
+                      <div class="card-selected-title">
+                        <a href="#" class="card-selected-text">
+                          شامپو روزانه لافارر مناسب موهای چرب
+                        </a>
+                      </div>
+                    </div>
+                    <div class="card-selected-footer">
+                      <div class="card-selected-price">
+                        <div class="card-real-price">۲۰۴٬۰۰۰</div>
+                        <div class="card-off-price">
+                          ۸۰٬۰۰۰
+                          <small>تومان</small>
+                        </div>
+                      </div>
+                      <div class="btn-selected-footer">
+                        <a class="card-selected-btn" href="#">مشاهده و خرید</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider-card">
+                    <div class="card-discounts">
+                      <div class="card-percent">
+                        <small>%</small>
+                        ۳۵
+                      </div>
+                    </div>
+                    <div class="card-selected-content">
+                      <div class="card-selected-img">
+                        <a href="#"
+                          ><img src="./Images/Thumbs/sliderProduct1.jpeg"
+                        /></a>
+                      </div>
+                      <div class="card-selected-title">
+                        <a href="#" class="card-selected-text">
+                          شامپو روزانه لافارر مناسب موهای چرب
+                        </a>
+                      </div>
+                    </div>
+                    <div class="card-selected-footer">
+                      <div class="card-selected-price">
+                        <div class="card-real-price">۲۰۴٬۰۰۰</div>
+                        <div class="card-off-price">
+                          ۱۰۰٬۰۰۰
+                          <small>تومان</small>
+                        </div>
+                      </div>
+                      <div class="btn-selected-footer">
+                        <a class="card-selected-btn" href="#">مشاهده و خرید</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider-card">
+                    <div class="card-discounts">
+                      <div class="card-percent">
+                        <small>%</small>
+                        ۳۰
+                      </div>
+                    </div>
+                    <div class="card-selected-content">
+                      <div class="card-selected-img">
+                        <a href="#"
+                          ><img src="./Images/Thumbs/sliderProduct2.jpeg"
+                        /></a>
+                      </div>
+                      <div class="card-selected-title">
+                        <a href="#" class="card-selected-text">
+                          شامپو روزانه لافارر مناسب موهای چرب
+                        </a>
+                      </div>
+                    </div>
+                    <div class="card-selected-footer">
+                      <div class="card-selected-price">
+                        <div class="card-real-price">۲۰۴٬۰۰۰</div>
+                        <div class="card-off-price">
+                          ۱۰۰٬۰۰۰
+                          <small>تومان</small>
+                        </div>
+                      </div>
+                      <div class="btn-selected-footer">
+                        <a class="card-selected-btn" href="#">مشاهده و خرید</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider-card">
+                    <div class="card-discounts">
+                      <div class="card-percent">
+                        <small>%</small>
+                        ۳۵
+                      </div>
+                    </div>
+                    <div class="card-selected-content">
+                      <div class="card-selected-img">
+                        <a href="#"
+                          ><img src="./Images/Thumbs/sliderProduct1.jpeg"
+                        /></a>
+                      </div>
+                      <div class="card-selected-title">
+                        <a href="#" class="card-selected-text">
+                          شامپو روزانه لافارر مناسب موهای چرب
+                        </a>
+                      </div>
+                    </div>
+                    <div class="card-selected-footer">
+                      <div class="card-selected-price">
+                        <div class="card-real-price">۲۰۴٬۰۰۰</div>
+                        <div class="card-off-price">
+                          ۱۰۰٬۰۰۰
+                          <small>تومان</small>
+                        </div>
+                      </div>
+                      <div class="btn-selected-footer">
+                        <a class="card-selected-btn" href="#">مشاهده و خرید</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </header>
-
-        <section class="header-slider">
-            <div class="header__thumbs">
-                <div class="link__pics">
-                    <img src="./Images/Thumbs/banner1.jpeg" class="link__pic">
-                    <img src="./Images/Thumbs/banner2.jpeg" class="link__pic">
-                </div>
-                <div class="swiper swiper-header">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide"><a href="#" class="swiper-slide-img" style="background-image: url(./Images/Thumbs/slider1.jpeg);"></a></div>
-                      <div class="swiper-slide"><a href="#" class="swiper-slide-img" style="background-image: url('./Images/Thumbs/slider2.jpeg');"></a></div>
-                      <div class="swiper-slide"><a href="#" class="swiper-slide-img" style="background-image: url('./Images/Thumbs/slider3.jpeg');"></a></div>
-                      <div class="swiper-slide"><a href="#" class="swiper-slide-img" style="background-image: url('./Images/Thumbs/slider4.jpeg');"></a></div>
-                      <div class="swiper-slide"><a href="#" class="swiper-slide-img" style="background-image: url('./Images/Thumbs/slider5.jpeg');"></a></div>
+          </div>
+          <div class="offrooz-slider">
+            <div class="swiper swiper-offrooz">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="slider-card">
+                    <div class="card-title">
+                      <a href="#" class="card-title-text"
+                        >شامپو روزانه لافارر مناسب موهای چرب</a
+                      >
                     </div>
-                    <div class="swiper-pagination"></div>
+                    <div class="card-img">
+                      <a href="#"
+                        ><img src="./Images/Thumbs/sliderProduct1.jpeg"
+                      /></a>
+                    </div>
+                    <a class="card-btn" href="#">
+                      <small class="real-price">۲۰۴٬۰۰۰</small>
+                      ۱۰۰٬۰۰۰ تومان
+                    </a>
+                  </div>
                 </div>
+                <div class="swiper-slide">
+                  <div class="slider-card">
+                    <div class="card-title">
+                      <a href="#" class="card-title-text"
+                        >شامپو روزانه لافارر مناسب موهای چرب</a
+                      >
+                    </div>
+                    <div class="card-img">
+                      <a href="#"
+                        ><img src="./Images/Thumbs/sliderProduct1.jpeg"
+                      /></a>
+                    </div>
+                    <a class="card-btn" href="#">
+                      <small class="real-price">۲۰۴٬۰۰۰</small>
+                      ۱۰۰٬۰۰۰ تومان
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider-card">
+                    <div class="card-title">
+                      <a href="#" class="card-title-text"
+                        >شامپو روزانه لافارر مناسب موهای چرب</a
+                      >
+                    </div>
+                    <div class="card-img">
+                      <a href="#"
+                        ><img src="./Images/Thumbs/sliderProduct1.jpeg"
+                      /></a>
+                    </div>
+                    <a class="card-btn" href="#">
+                      <small class="real-price">۲۰۴٬۰۰۰</small>
+                      ۱۰۰٬۰۰۰ تومان
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider-card">
+                    <div class="card-title">
+                      <a href="#" class="card-title-text"
+                        >شامپو روزانه لافارر مناسب موهای چرب</a
+                      >
+                    </div>
+                    <div class="card-img">
+                      <a href="#"
+                        ><img src="./Images/Thumbs/sliderProduct1.jpeg"
+                      /></a>
+                    </div>
+                    <a class="card-btn" href="#">
+                      <small class="real-price">۲۰۴٬۰۰۰</small>
+                      ۱۰۰٬۰۰۰ تومان
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider-card">
+                    <div class="card-title">
+                      <a href="#" class="card-title-text"
+                        >شامپو روزانه لافارر مناسب موهای چرب</a
+                      >
+                    </div>
+                    <div class="card-img">
+                      <a href="#"
+                        ><img src="./Images/Thumbs/sliderProduct1.jpeg"
+                      /></a>
+                    </div>
+                    <a class="card-btn" href="#">
+                      <small class="real-price">۲۰۴٬۰۰۰</small>
+                      ۱۰۰٬۰۰۰ تومان
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider-card">
+                    <div class="card-title">
+                      <a href="#" class="card-title-text"
+                        >شامپو روزانه لافارر مناسب موهای چرب</a
+                      >
+                    </div>
+                    <div class="card-img">
+                      <a href="#"
+                        ><img src="./Images/Thumbs/sliderProduct1.jpeg"
+                      /></a>
+                    </div>
+                    <a class="card-btn" href="#">
+                      <small class="real-price">۲۰۴٬۰۰۰</small>
+                      ۱۰۰٬۰۰۰ تومان
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider-card">
+                    <div class="card-title">
+                      <a href="#" class="card-title-text"
+                        >شامپو روزانه لافارر مناسب موهای چرب</a
+                      >
+                    </div>
+                    <div class="card-img">
+                      <a href="#"
+                        ><img src="./Images/Thumbs/sliderProduct1.jpeg"
+                      /></a>
+                    </div>
+                    <a class="card-btn" href="#">
+                      <small class="real-price">۲۰۴٬۰۰۰</small>
+                      ۱۰۰٬۰۰۰ تومان
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider-card">
+                    <div class="card-title">
+                      <a href="#" class="card-title-text"
+                        >شامپو روزانه لافارر مناسب موهای چرب</a
+                      >
+                    </div>
+                    <div class="card-img">
+                      <a href="#"
+                        ><img src="./Images/Thumbs/sliderProduct1.jpeg"
+                      /></a>
+                    </div>
+                    <a class="card-btn" href="#">
+                      <small class="real-price">۲۰۴٬۰۰۰</small>
+                      ۱۰۰٬۰۰۰ تومان
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider-card">
+                    <div class="card-title">
+                      <a href="#" class="card-title-text"
+                        >شامپو روزانه لافارر مناسب موهای چرب</a
+                      >
+                    </div>
+                    <div class="card-img">
+                      <a href="#"
+                        ><img src="./Images/Thumbs/sliderProduct1.jpeg"
+                      /></a>
+                    </div>
+                    <a class="card-btn" href="#">
+                      <small class="real-price">۲۰۴٬۰۰۰</small>
+                      ۱۰۰٬۰۰۰ تومان
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider-card">
+                    <div class="card-title">
+                      <a href="#" class="card-title-text"
+                        >شامپو روزانه لافارر مناسب موهای چرب</a
+                      >
+                    </div>
+                    <div class="card-img">
+                      <a href="#"
+                        ><img src="./Images/Thumbs/sliderProduct1.jpeg"
+                      /></a>
+                    </div>
+                    <a class="card-btn" href="#">
+                      <small class="real-price">۲۰۴٬۰۰۰</small>
+                      ۱۰۰٬۰۰۰ تومان
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section style="overflow-x: hidden;" class="section-offrooz">
-            <div class="offrooz">
-                <div class="offrooz-header">
-                    <div class="offrooz-top">
-                        <div class="offrooz-title">
-                            <i class="fas fa-percentage"></i>
-                            <img src="./Images/Thumbs/offrooz.svg" alt="offrooz icon">
-                            <div class="offrooz-timer">
-                                <div class="counter" id="offroozCounter">
-                                    <div class="counter-wraper">
-                                        <div class="counter-circle counter-seconds">
-                                            <div class="count-circle">
-                                                <div class="count-value" id="countValueSeconds"></div>
-                                            </div>
-                                        </div>
-                                        <span class="both-dot">:</span>
-                                        <div class="counter-circle counter-minutes">
-                                            <div class="count-circle">
-                                                <div class="count-value" id="countValueMinutes"></div>
-                                            </div>
-                                        </div>
-                                        <span class="both-dot">:</span>
-                                        <div class="counter-circle counter-hours">
-                                            <div class="count-circle">
-                                                <div class="count-value" id="countValueHours"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#" class="see-all-text">مشاهده همه</a>
+    <section class="section-banner">
+      <a href="#" class="banner1"
+        ><img src="./Images/Thumbs/section2.jpeg"
+      /></a>
+      <a href="#" class="banner2"
+        ><img src="./Images/Thumbs/section1.jpeg"
+      /></a>
+    </section>
+
+    <section class="best-selling-product">
+      <div class="best-selling-product-header">
+        <p class="best-selling-prouduct-header-title">پر فروش ترین محصولات</p>
+        <a href="#" class="best-selling-product-header-see-more">
+          <p class="best-selling-product-header-see-more-link">مشاهده بیشتر</p>
+          <i class="fas fa-long-arrow-alt-left"></i>
+        </a>
+      </div>
+      <div class="best-selling-content">
+        <div class="swiper swiper-best-selling">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide-best-sell">
+              <a href="#" class="card-link">
+                <div class="card">
+                  <img class="img" src="./Images/Thumbs/best-sell1.jpeg" />
+                  <i class="fas fa-percentage fa-percentage-1"></i>
+       
+                  <i class="fas fa-percentage fa-percentage-1"></i>
+               <p class="title">ریمل الیزاموتیک مدل بسته ۲ عددی</p>
+                  <div class="discount-main">
+                    <div class="discount">
+                      ۲۰
+                      <small>%</small>
                     </div>
+                  </div>
+                  <div class="price">
+                    <p class="real-price">۲۰۴٬۰۰۰</p>
+                    <p class="discount-price">۸۰٬۰۰۰ تومان</p>
+                  </div>
                 </div>
-                <div class="offrooz-content">
-                    <div class="selected-product">
-                        <div class="swiper swiper-selected">
-                            <div class="swiper-wrapper">
-                              <div class="swiper-slide">
-                                <div class="slider-card">
-                                    <div class="card-discounts">
-                                        <div class="card-percent">
-                                            <small>%</small>
-                                            ۳۵
-                                        </div>
-                                    </div>
-                                    <div class="card-selected-content">
-                                        <div class="card-selected-img">
-                                            <a href="#"><img src="./Images/Thumbs/sliderProduct1.jpeg"></a>
-                                        </div>
-                                        <div class="card-selected-title">
-                                            <a href="#" class="card-selected-text">
-                                                 شامپو روزانه لافارر مناسب موهای چرب
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="card-selected-footer">
-                                        <div class="card-selected-price">
-                                            <div class="card-real-price">۲۰۴٬۰۰۰</div>
-                                            <div class="card-off-price">۱۰۰٬۰۰۰
-                                                <small>تومان</small>
-                                            </div>
-                                        </div>
-                                        <div class="btn-selected-footer">
-                                            <i class="fas fa-check-circle"></i>
-                                            <a class="card-selected-btn" href="#">مشاهده و خرید</a>
-                                        </div>
-                                    </div>
-                                </div>
-                              </div>
-                              <div class="swiper-slide">
-                                <div class="slider-card">
-                                    <div class="card-discounts">
-                                        <div class="card-percent">
-                                            <small>%</small>
-                                            ۱۵
-                                        </div>
-                                    </div>
-                                    <div class="card-selected-content">
-                                        <div class="card-selected-img">
-                                            <a href="#"><img src="./Images/Thumbs/sliderProduct2.jpeg"></a>
-                                        </div>
-                                        <div class="card-selected-title">
-                                            <a href="#" class="card-selected-text">
-                                                 شامپو روزانه لافارر مناسب موهای چرب
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="card-selected-footer">
-                                        <div class="card-selected-price">
-                                            <div class="card-real-price">۲۰۴٬۰۰۰</div>
-                                            <div class="card-off-price">۸۰٬۰۰۰
-                                                <small>تومان</small>
-                                            </div>
-                                        </div>
-                                        <div class="btn-selected-footer">
-                                            <i class="fas fa-check-circle"></i>
-                                            <a class="card-selected-btn" href="#">مشاهده و خرید</a>
-                                        </div>
-                                    </div>
-                                </div>
-                              </div>
-                              <div class="swiper-slide">
-                                <div class="slider-card">
-                                    <div class="card-discounts">
-                                        <div class="card-percent">
-                                            <small>%</small>
-                                            ۳۵
-                                        </div>
-                                    </div>
-                                    <div class="card-selected-content">
-                                        <div class="card-selected-img">
-                                            <a href="#"><img src="./Images/Thumbs/sliderProduct1.jpeg"></a>
-                                        </div>
-                                        <div class="card-selected-title">
-                                            <a href="#" class="card-selected-text">
-                                                 شامپو روزانه لافارر مناسب موهای چرب
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="card-selected-footer">
-                                        <div class="card-selected-price">
-                                            <div class="card-real-price">۲۰۴٬۰۰۰</div>
-                                            <div class="card-off-price">۱۰۰٬۰۰۰
-                                                <small>تومان</small>
-                                            </div>
-                                        </div>
-                                        <div class="btn-selected-footer">
-                                            <i class="fas fa-check-circle"></i>
-                                            <a class="card-selected-btn" href="#">مشاهده و خرید</a>
-                                        </div>
-                                    </div>
-                                </div>
-                              </div>
-                              <div class="swiper-slide">
-                                <div class="slider-card">
-                                    <div class="card-discounts">
-                                        <div class="card-percent">
-                                            <small>%</small>
-                                            ۳۰
-                                        </div>
-                                    </div>
-                                    <div class="card-selected-content">
-                                        <div class="card-selected-img">
-                                            <a href="#"><img src="./Images/Thumbs/sliderProduct2.jpeg"></a>
-                                        </div>
-                                        <div class="card-selected-title">
-                                            <a href="#" class="card-selected-text">
-                                                 شامپو روزانه لافارر مناسب موهای چرب
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="card-selected-footer">
-                                        <div class="card-selected-price">
-                                            <div class="card-real-price">۲۰۴٬۰۰۰</div>
-                                            <div class="card-off-price">۱۰۰٬۰۰۰
-                                                <small>تومان</small>
-                                            </div>
-                                        </div>
-                                        <div class="btn-selected-footer">
-                                            <i class="fas fa-check-circle"></i>
-                                            <a class="card-selected-btn" href="#">مشاهده و خرید</a>
-                                        </div>
-                                    </div>
-                                </div>
-                              </div>
-                              <div class="swiper-slide">
-                                <div class="slider-card">
-                                    <div class="card-discounts">
-                                        <div class="card-percent">
-                                            <small>%</small>
-                                            ۳۵
-                                        </div>
-                                    </div>
-                                    <div class="card-selected-content">
-                                        <div class="card-selected-img">
-                                            <a href="#"><img src="./Images/Thumbs/sliderProduct1.jpeg"></a>
-                                        </div>
-                                        <div class="card-selected-title">
-                                            <a href="#" class="card-selected-text">
-                                                 شامپو روزانه لافارر مناسب موهای چرب
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="card-selected-footer">
-                                        <div class="card-selected-price">
-                                            <div class="card-real-price">۲۰۴٬۰۰۰</div>
-                                            <div class="card-off-price">۱۰۰٬۰۰۰
-                                                <small>تومان</small>
-                                            </div>
-                                        </div>
-                                        <div class="btn-selected-footer">
-                                            <i class="fas fa-check-circle"></i>
-                                            <a class="card-selected-btn" href="#">مشاهده و خرید</a>
-                                        </div>
-                                    </div>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="offrooz-slider">
-                        <div class="swiper swiper-offrooz">
-                            <div class="swiper-wrapper">
-                              <div class="swiper-slide">
-                                  <div class="slider-card">
-                                      <div class="card-title">
-                                          <a href="#" class="card-title-text">شامپو روزانه لافارر مناسب موهای چرب</a>
-                                      </div>
-                                      <div class="card-img">
-                                          <a href="#"><img src="./Images/Thumbs/sliderProduct1.jpeg"></a>
-                                      </div>
-                                    <a class="card-btn" href="#">
-                                        <small class="real-price">۲۰۴٬۰۰۰</small>
-                                        ۱۰۰٬۰۰۰ تومان
-                                    </a>
-                                  </div>
-                              </div>
-                              <div class="swiper-slide">
-                                <div class="slider-card">
-                                    <div class="card-title">
-                                        <a href="#" class="card-title-text">شامپو روزانه لافارر مناسب موهای چرب</a>
-                                    </div>
-                                    <div class="card-img">
-                                        <a href="#"><img src="./Images/Thumbs/sliderProduct1.jpeg"></a>
-                                    </div>
-                                  <a class="card-btn" href="#">
-                                      <small class="real-price">۲۰۴٬۰۰۰</small>
-                                      ۱۰۰٬۰۰۰ تومان
-                                  </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slider-card">
-                                    <div class="card-title">
-                                        <a href="#" class="card-title-text">شامپو روزانه لافارر مناسب موهای چرب</a>
-                                    </div>
-                                    <div class="card-img">
-                                        <a href="#"><img src="./Images/Thumbs/sliderProduct1.jpeg"></a>
-                                    </div>
-                                  <a class="card-btn" href="#">
-                                      <small class="real-price">۲۰۴٬۰۰۰</small>
-                                      ۱۰۰٬۰۰۰ تومان
-                                  </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slider-card">
-                                    <div class="card-title">
-                                        <a href="#" class="card-title-text">شامپو روزانه لافارر مناسب موهای چرب</a>
-                                    </div>
-                                    <div class="card-img">
-                                        <a href="#"><img src="./Images/Thumbs/sliderProduct1.jpeg"></a>
-                                    </div>
-                                  <a class="card-btn" href="#">
-                                      <small class="real-price">۲۰۴٬۰۰۰</small>
-                                      ۱۰۰٬۰۰۰ تومان
-                                  </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slider-card">
-                                    <div class="card-title">
-                                        <a href="#" class="card-title-text">شامپو روزانه لافارر مناسب موهای چرب</a>
-                                    </div>
-                                    <div class="card-img">
-                                        <a href="#"><img src="./Images/Thumbs/sliderProduct1.jpeg"></a>
-                                    </div>
-                                  <a class="card-btn" href="#">
-                                      <small class="real-price">۲۰۴٬۰۰۰</small>
-                                      ۱۰۰٬۰۰۰ تومان
-                                  </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slider-card">
-                                    <div class="card-title">
-                                        <a href="#" class="card-title-text">شامپو روزانه لافارر مناسب موهای چرب</a>
-                                    </div>
-                                    <div class="card-img">
-                                        <a href="#"><img src="./Images/Thumbs/sliderProduct1.jpeg"></a>
-                                    </div>
-                                  <a class="card-btn" href="#">
-                                      <small class="real-price">۲۰۴٬۰۰۰</small>
-                                      ۱۰۰٬۰۰۰ تومان
-                                  </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slider-card">
-                                    <div class="card-title">
-                                        <a href="#" class="card-title-text">شامپو روزانه لافارر مناسب موهای چرب</a>
-                                    </div>
-                                    <div class="card-img">
-                                        <a href="#"><img src="./Images/Thumbs/sliderProduct1.jpeg"></a>
-                                    </div>
-                                  <a class="card-btn" href="#">
-                                      <small class="real-price">۲۰۴٬۰۰۰</small>
-                                      ۱۰۰٬۰۰۰ تومان
-                                  </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slider-card">
-                                    <div class="card-title">
-                                        <a href="#" class="card-title-text">شامپو روزانه لافارر مناسب موهای چرب</a>
-                                    </div>
-                                    <div class="card-img">
-                                        <a href="#"><img src="./Images/Thumbs/sliderProduct1.jpeg"></a>
-                                    </div>
-                                  <a class="card-btn" href="#">
-                                      <small class="real-price">۲۰۴٬۰۰۰</small>
-                                      ۱۰۰٬۰۰۰ تومان
-                                  </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slider-card">
-                                    <div class="card-title">
-                                        <a href="#" class="card-title-text">شامپو روزانه لافارر مناسب موهای چرب</a>
-                                    </div>
-                                    <div class="card-img">
-                                        <a href="#"><img src="./Images/Thumbs/sliderProduct1.jpeg"></a>
-                                    </div>
-                                  <a class="card-btn" href="#">
-                                      <small class="real-price">۲۰۴٬۰۰۰</small>
-                                      ۱۰۰٬۰۰۰ تومان
-                                  </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slider-card">
-                                    <div class="card-title">
-                                        <a href="#" class="card-title-text">شامپو روزانه لافارر مناسب موهای چرب</a>
-                                    </div>
-                                    <div class="card-img">
-                                        <a href="#"><img src="./Images/Thumbs/sliderProduct1.jpeg"></a>
-                                    </div>
-                                  <a class="card-btn" href="#">
-                                      <small class="real-price">۲۰۴٬۰۰۰</small>
-                                      ۱۰۰٬۰۰۰ تومان
-                                  </a>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-                </div>
+              </a>
             </div>
-        </section>
-        
-        <section class="section-banner">
-            <a href="#" class="banner1"><img src="./Images/Thumbs/section1.jpeg"></a>
-            <a href="#" class="banner2"><img src="./Images/Thumbs/section2.jpeg"></a>
-        </section>
+            <div class="swiper-slide swiper-slide-best-sell">
+              <a href="#" class="card-link">
+                <div class="card">
+                  <img class="img" src="./Images/Thumbs/best-sell2.jpeg" />
+                  <i class="fas fa-percentage fa-percentage-1"></i>
+                  <p class="title">ریمل الیزاموتیک مدل بسته ۲ عددی</p>
+                  <div class="discount-main">
+                    <div class="discount">
+                      ۲۰
+                      <small>%</small>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p class="real-price">۱۴۰٬۰۰۰</p>
+                    <p class="discount-price">۳۰٬۰۰۰ تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide swiper-slide-best-sell">
+              <a href="#" class="card-link">
+                <div class="card">
+                  <img class="img" src="./Images/Thumbs/best-sell3.jpeg" />
+                  <i class="fas fa-percentage fa-percentage-1"></i>
+                  <p class="title">ریمل الیزاموتیک مدل بسته ۲ عددی</p>
+                  <div class="discount-main">
+                    <div class="discount">
+                      ۲۰
+                      <small>%</small>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p class="real-price">۶۰٬۰۰۰</p>
+                    <p class="discount-price">۵۰٬۰۰۰ تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide swiper-slide-best-sell">
+              <a href="#" class="card-link">
+                <div class="card">
+                  <img class="img" src="./Images/Thumbs/best-sell1.jpeg" />
+                  <i class="fas fa-percentage fa-percentage-1"></i>
+                  <p class="title">ریمل الیزاموتیک مدل بسته ۲ عددی</p>
+                  <div class="discount-main">
+                    <div class="discount">
+                      ۲۰
+                      <small>%</small>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p class="real-price">۲۰۴٬۰۰۰</p>
+                    <p class="discount-price">۸۰٬۰۰۰ تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide swiper-slide-best-sell">
+              <a href="#" class="card-link">
+                <div class="card">
+                  <img class="img" src="./Images/Thumbs/best-sell2.jpeg" />
+                  <i class="fas fa-percentage fa-percentage-1"></i>
+                  <p class="title">ریمل الیزاموتیک مدل بسته ۲ عددی</p>
+                  <div class="discount-main">
+                    <div class="discount">
+                      ۲۰
+                      <small>%</small>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p class="real-price">۱۴۰٬۰۰۰</p>
+                    <p class="discount-price">۳۰٬۰۰۰ تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide swiper-slide-best-sell">
+              <a href="#" class="card-link">
+                <div class="card">
+                  <img class="img" src="./Images/Thumbs/best-sell3.jpeg" />
+                  <i class="fas fa-percentage fa-percentage-1"></i>
+                  <p class="title">ریمل الیزاموتیک مدل بسته ۲ عددی</p>
+                  <div class="discount-main">
+                    <div class="discount">
+                      ۲۰
+                      <small>%</small>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p class="real-price">۶۰٬۰۰۰</p>
+                    <p class="discount-price">۵۰٬۰۰۰ تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide swiper-slide-best-sell">
+              <a href="#" class="card-link">
+                <div class="card">
+                  <img class="img" src="./Images/Thumbs/best-sell1.jpeg" />
+                  <i class="fas fa-percentage fa-percentage-1"></i>
+                  <p class="title">ریمل الیزاموتیک مدل بسته ۲ عددی</p>
+                  <div class="discount-main">
+                    <div class="discount">
+                      ۲۰
+                      <small>%</small>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p class="real-price">۲۰۴٬۰۰۰</p>
+                    <p class="discount-price">۸۰٬۰۰۰ تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide swiper-slide-best-sell">
+              <a href="#" class="card-link">
+                <div class="card">
+                  <img class="img" src="./Images/Thumbs/best-sell2.jpeg" />
+                  <i class="fas fa-percentage fa-percentage-1"></i>
+                  <p class="title">ریمل الیزاموتیک مدل بسته ۲ عددی</p>
+                  <div class="discount-main">
+                    <div class="discount">
+                      ۲۰
+                      <small>%</small>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p class="real-price">۱۴۰٬۰۰۰</p>
+                    <p class="discount-price">۳۰٬۰۰۰ تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide swiper-slide-best-sell">
+              <a href="#" class="card-link">
+                <div class="card">
+                  <img class="img" src="./Images/Thumbs/best-sell3.jpeg" />
+                  <i class="fas fa-percentage fa-percentage-1"></i>
+                  <p class="title">ریمل الیزاموتیک مدل بسته ۲ عددی</p>
+                  <div class="discount-main">
+                    <div class="discount">
+                      ۲۰
+                      <small>%</small>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p class="real-price">۶۰٬۰۰۰</p>
+                    <p class="discount-price">۵۰٬۰۰۰ تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide swiper-slide-best-sell">
+              <a href="#" class="card-link">
+                <div class="card">
+                  <img class="img" src="./Images/Thumbs/best-sell1.jpeg" />
+                  <i class="fas fa-percentage fa-percentage-1"></i>
+                  <p class="title">ریمل الیزاموتیک مدل بسته ۲ عددی</p>
+                  <div class="discount-main">
+                    <div class="discount">
+                      ۲۰
+                      <small>%</small>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p class="real-price">۲۰۴٬۰۰۰</p>
+                    <p class="discount-price">۸۰٬۰۰۰ تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide swiper-slide-best-sell">
+              <a href="#" class="card-link">
+                <div class="card">
+                  <img class="img" src="./Images/Thumbs/best-sell2.jpeg" />
+                  <i class="fas fa-percentage fa-percentage-1"></i>
+                  <p class="title">ریمل الیزاموتیک مدل بسته ۲ عددی</p>
+                  <div class="discount-main">
+                    <div class="discount">
+                      ۲۰
+                      <small>%</small>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p class="real-price">۱۴۰٬۰۰۰</p>
+                    <p class="discount-price">۳۰٬۰۰۰ تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide swiper-slide-best-sell">
+              <a href="#" class="card-link">
+                <div class="card">
+                  <img class="img" src="./Images/Thumbs/best-sell3.jpeg" />
+                  <i class="fas fa-percentage fa-percentage-1"></i>
+                  <p class="title">ریمل الیزاموتیک مدل بسته ۲ عددی</p>
+                  <div class="discount-main">
+                    <div class="discount">
+                      ۲۰
+                      <small>%</small>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p class="real-price">۶۰٬۰۰۰</p>
+                    <p class="discount-price">۵۰٬۰۰۰ تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide swiper-slide-best-sell">
+              <a href="#" class="card-link">
+                <div class="card">
+                  <img class="img" src="./Images/Thumbs/best-sell1.jpeg" />
+                  <i class="fas fa-percentage fa-percentage-1"></i>
+                  <p class="title">ریمل الیزاموتیک مدل بسته ۲ عددی</p>
+                  <div class="discount-main">
+                    <div class="discount">
+                      ۲۰
+                      <small>%</small>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p class="real-price">۲۰۴٬۰۰۰</p>
+                    <p class="discount-price">۸۰٬۰۰۰ تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide swiper-slide-best-sell">
+              <a href="#" class="card-link">
+                <div class="card">
+                  <img class="img" src="./Images/Thumbs/best-sell2.jpeg" />
+                  <i class="fas fa-percentage fa-percentage-1"></i>
+                  <p class="title">ریمل الیزاموتیک مدل بسته ۲ عددی</p>
+                  <div class="discount-main">
+                    <div class="discount">
+                      ۲۰
+                      <small>%</small>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p class="real-price">۱۴۰٬۰۰۰</p>
+                    <p class="discount-price">۳۰٬۰۰۰ تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide swiper-slide-best-sell">
+              <a href="#" class="card-link">
+                <div class="card">
+                  <img class="img" src="./Images/Thumbs/best-sell3.jpeg" />
+                  <i class="fas fa-percentage fa-percentage-1"></i>
+                  <p class="title">ریمل الیزاموتیک مدل بسته ۲ عددی</p>
+                  <div class="discount-main">
+                    <div class="discount">
+                      ۲۰
+                      <small>%</small>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p class="real-price">۶۰٬۰۰۰</p>
+                    <p class="discount-price">۵۰٬۰۰۰ تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide swiper-slide-best-sell">
+              <a href="#" class="card-link">
+                <div class="card">
+                  <img class="img" src="./Images/Thumbs/best-sell1.jpeg" />
+                  <i class="fas fa-percentage fa-percentage-1"></i>
+                  <p class="title">ریمل الیزاموتیک مدل بسته ۲ عددی</p>
+                  <div class="discount-main">
+                    <div class="discount">
+                      ۲۰
+                      <small>%</small>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p class="real-price">۲۰۴٬۰۰۰</p>
+                    <p class="discount-price">۸۰٬۰۰۰ تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide swiper-slide-best-sell">
+              <a href="#" class="card-link">
+                <div class="card">
+                  <img class="img" src="./Images/Thumbs/best-sell2.jpeg" />
+                  <i class="fas fa-percentage fa-percentage-1"></i>
+                  <p class="title">ریمل الیزاموتیک مدل بسته ۲ عددی</p>
+                  <div class="discount-main">
+                    <div class="discount">
+                      ۲۰
+                      <small>%</small>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p class="real-price">۱۴۰٬۰۰۰</p>
+                    <p class="discount-price">۳۰٬۰۰۰ تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide swiper-slide-best-sell">
+              <a href="#" class="card-link">
+                <div class="card">
+                  <img class="img" src="./Images/Thumbs/best-sell3.jpeg" />
+                  <i class="fas fa-percentage fa-percentage-1"></i>
+                  <p class="title">ریمل الیزاموتیک مدل بسته ۲ عددی</p>
+                  <div class="discount-main">
+                    <div class="discount">
+                      ۲۰
+                      <small>%</small>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p class="real-price">۶۰٬۰۰۰</p>
+                    <p class="discount-price">۵۰٬۰۰۰ تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide swiper-slide-best-sell">
+              <a href="#" class="card-link">
+                <div class="card">
+                  <img class="img" src="./Images/Thumbs/best-sell1.jpeg" />
+                  <i class="fas fa-percentage fa-percentage-1"></i>
+                  <p class="title">ریمل الیزاموتیک مدل بسته ۲ عددی</p>
+                  <div class="discount-main">
+                    <div class="discount">
+                      ۲۰
+                      <small>%</small>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p class="real-price">۲۰۴٬۰۰۰</p>
+                    <p class="discount-price">۸۰٬۰۰۰ تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide swiper-slide-best-sell">
+              <a href="#" class="card-link">
+                <div class="card">
+                  <img class="img" src="./Images/Thumbs/best-sell2.jpeg" />
+                  <i class="fas fa-percentage fa-percentage-1"></i>
+                  <p class="title">ریمل الیزاموتیک مدل بسته ۲ عددی</p>
+                  <div class="discount-main">
+                    <div class="discount">
+                      ۲۰
+                      <small>%</small>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p class="real-price">۱۴۰٬۰۰۰</p>
+                    <p class="discount-price">۳۰٬۰۰۰ تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide swiper-slide-best-sell">
+              <a href="#" class="card-link">
+                <div class="card">
+                  <img class="img" src="./Images/Thumbs/best-sell3.jpeg" />
+                  <i class="fas fa-percentage fa-percentage-1"></i>
+                  <p class="title">ریمل الیزاموتیک مدل بسته ۲ عددی</p>
+                  <div class="discount-main">
+                    <div class="discount">
+                      ۲۰
+                      <small>%</small>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p class="real-price">۶۰٬۰۰۰</p>
+                    <p class="discount-price">۵۰٬۰۰۰ تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide swiper-slide-best-sell">
+              <a href="#" class="card-link">
+                <div class="card">
+                  <img class="img" src="./Images/Thumbs/best-sell1.jpeg" />
+                  <i class="fas fa-percentage fa-percentage-1"></i>
+                  <p class="title">ریمل الیزاموتیک مدل بسته ۲ عددی</p>
+                  <div class="discount-main">
+                    <div class="discount">
+                      ۲۰
+                      <small>%</small>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p class="real-price">۲۰۴٬۰۰۰</p>
+                    <p class="discount-price">۸۰٬۰۰۰ تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide swiper-slide-best-sell">
+              <a href="#" class="card-link">
+                <div class="card">
+                  <img class="img" src="./Images/Thumbs/best-sell2.jpeg" />
+                  <i class="fas fa-percentage fa-percentage-1"></i>
+                  <p class="title">ریمل الیزاموتیک مدل بسته ۲ عددی</p>
+                  <div class="discount-main">
+                    <div class="discount">
+                      ۲۰
+                      <small>%</small>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p class="real-price">۱۴۰٬۰۰۰</p>
+                    <p class="discount-price">۳۰٬۰۰۰ تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide swiper-slide-best-sell">
+              <a href="#" class="card-link">
+                <div class="card">
+                  <img class="img" src="./Images/Thumbs/best-sell3.jpeg" />
+                  <i class="fas fa-percentage fa-percentage-1"></i>
+                  <p class="title">ریمل الیزاموتیک مدل بسته ۲ عددی</p>
+                  <div class="discount-main">
+                    <div class="discount">
+                      ۲۰
+                      <small>%</small>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p class="real-price">۶۰٬۰۰۰</p>
+                    <p class="discount-price">۵۰٬۰۰۰ تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide swiper-slide-best-sell">
+              <a href="#" class="card-link">
+                <div class="card">
+                  <img class="img" src="./Images/Thumbs/best-sell1.jpeg" />
+                  <i class="fas fa-percentage fa-percentage-1"></i>
+                  <p class="title">ریمل الیزاموتیک مدل بسته ۲ عددی</p>
+                  <div class="discount-main">
+                    <div class="discount">
+                      ۲۰
+                      <small>%</small>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p class="real-price">۲۰۴٬۰۰۰</p>
+                    <p class="discount-price">۸۰٬۰۰۰ تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide swiper-slide-best-sell">
+              <a href="#" class="card-link">
+                <div class="card">
+                  <img class="img" src="./Images/Thumbs/best-sell2.jpeg" />
+                  <i class="fas fa-percentage fa-percentage-1"></i>
+                  <p class="title">ریمل الیزاموتیک مدل بسته ۲ عددی</p>
+                  <div class="discount-main">
+                    <div class="discount">
+                      ۲۰
+                      <small>%</small>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p class="real-price">۱۴۰٬۰۰۰</p>
+                    <p class="discount-price">۳۰٬۰۰۰ تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide swiper-slide-best-sell">
+              <a href="#" class="card-link">
+                <div class="card">
+                  <img class="img" src="./Images/Thumbs/best-sell3.jpeg" />
+                  <i class="fas fa-percentage fa-percentage-1"></i>
+                  <p class="title">ریمل الیزاموتیک مدل بسته ۲ عددی</p>
+                  <div class="discount-main">
+                    <div class="discount">
+                      ۲۰
+                      <small>%</small>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p class="real-price">۶۰٬۰۰۰</p>
+                    <p class="discount-price">۵۰٬۰۰۰ تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide swiper-slide-best-sell">
+              <a href="#" class="card-link">
+                <div class="card">
+                  <img class="img" src="./Images/Thumbs/best-sell1.jpeg" />
+                  <i class="fas fa-percentage fa-percentage-1"></i>
+                  <p class="title">ریمل الیزاموتیک مدل بسته ۲ عددی</p>
+                  <div class="discount-main">
+                    <div class="discount">
+                      ۲۰
+                      <small>%</small>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p class="real-price">۲۰۴٬۰۰۰</p>
+                    <p class="discount-price">۸۰٬۰۰۰ تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide swiper-slide-best-sell">
+              <a href="#" class="card-link">
+                <div class="card">
+                  <img class="img" src="./Images/Thumbs/best-sell2.jpeg" />
+                  <i class="fas fa-percentage fa-percentage-1"></i>
+                  <p class="title">ریمل الیزاموتیک مدل بسته ۲ عددی</p>
+                  <div class="discount-main">
+                    <div class="discount">
+                      ۲۰
+                      <small>%</small>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p class="real-price">۱۴۰٬۰۰۰</p>
+                    <p class="discount-price">۳۰٬۰۰۰ تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide swiper-slide-best-sell">
+              <a href="#" class="card-link">
+                <div class="card">
+                  <img class="img" src="./Images/Thumbs/best-sell3.jpeg" />
+                  <i class="fas fa-percentage fa-percentage-1"></i>
+                  <p class="title">ریمل الیزاموتیک مدل بسته ۲ عددی</p>
+                  <div class="discount-main">
+                    <div class="discount">
+                      ۲۰
+                      <small>%</small>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p class="real-price">۶۰٬۰۰۰</p>
+                    <p class="discount-price">۵۰٬۰۰۰ تومان</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <script src="./Scripts/swiper-bundle.min.js"></script>
-        <script src="./Scripts/slider.js"></script>
-        <script src="./Scripts/blackBack.js"></script>
-        <script src="./Scripts/index.js"></script>
-    </body>
+    <script src="./Scripts/swiper-bundle.min.js"></script>
+    <script src="./Scripts/slider.js"></script>
+    <script src="./Scripts/blackBack.js"></script>
+    <script src="./Scripts/index.js"></script>
+  </body>
 </html>

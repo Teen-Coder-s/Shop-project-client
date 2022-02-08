@@ -43,6 +43,14 @@ const selectedSliderSwiper = new Swiper('.swiper-selected', {
   },
 });
 
+const bestProductSelling = new Swiper('.swiper-best-selling', {
+  lazy: true,
+  slidesPerView: 7.5,
+  keyboard: {
+    enabled: true,
+  },
+});
+
 // let slideIndex = 0
 // let timer = 1000
 
