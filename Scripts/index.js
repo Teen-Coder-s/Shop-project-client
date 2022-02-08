@@ -18,8 +18,14 @@ function numberToPersian(number) {
 
 
 setInterval(() => {
+    let timer = {
+        year: 2022,
+        month: 1,
+        day: 1000000,
+        hours: 10,
+    }
 
-    let time = new Date("February 08, 2022 10:00:00").getTime();
+    let time = new Date(timer.year , timer.month , timer.day , timer.hours , 0 , 0 , 0).getTime();
     let now = new Date().getTime();
     let distance = time - now;
 
@@ -31,7 +37,4 @@ setInterval(() => {
     countValueMinutes.textContent = numberToPersian(minutes);
     countValueSeconds.textContent = numberToPersian(seconds);
 
-    if(hours < 0) {
-        time = new Date().getTime() + 86400605;
-    }
 }, 1000);

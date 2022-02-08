@@ -36,6 +36,7 @@
     background-color: #D90429 !important;
     width: 25px !important;
     border-radius: 4px !important;
+    transition: .15s linear !important;
 }
 
 .swiper-slide-img {
