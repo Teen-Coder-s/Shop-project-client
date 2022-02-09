@@ -414,7 +414,7 @@
   align-items: center;
 }
 
-.swiper-slide-best-sell:hover {
+.card:hover {
   border: 1px solid #e0e0e0;
 }
 
@@ -519,10 +519,6 @@
   align-items: center;
 }
 
-.swiper-slide-offer-motan:hover {
-  border: 1px solid #e0e0e0;
-}
-
 /* Winter Skin Care */
 
 .winter-skin-care {
@@ -564,6 +560,81 @@
   align-items: center;
 }
 
-.swiper-slide-winter-skin-care:hover {
-  border: 1px solid #e0e0e0;
+.swiper-first {
+  margin-right: 10px;
+}
+
+/* offer banner */
+
+.offer-banners {
+  margin-top: 35px;
+}
+
+.offer-banner {
+  display: flex;
+}
+
+.offer-banner-card {
+  margin: 0 10px;
+}
+
+.offer-banner-img {
+  max-width: 100%;
+  border-radius: 25px;
+}
+
+.banners-2 {
+  display: flex;
+  margin-top: 5px;
+}
+
+.banner-2-link {
+  margin: 0 10px;
+}
+
+/* Popular perfumes */
+
+.swiper-popular-perfumes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popular-perfumes {
+  margin-top: 60px;
+}
+
+.popular-perfumes-header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 0 30px;
+}
+
+.popular-perfumes-title {
+  color: #585858;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.popular-perfumes-content {
+  margin-top: 20px;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.swiper-popular-perfumes {
+  display: flex;
+  padding: 20px !important;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.popular-perfumes-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

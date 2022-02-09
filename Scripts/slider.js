@@ -45,6 +45,7 @@ const selectedSliderSwiper = new Swiper('.swiper-selected', {
 
 const bestProductSelling = new Swiper('.swiper-best-selling', {
   lazy: true,
+  spaceBetween: 30,
   slidesPerView: 7.5,
   keyboard: {
     enabled: true,
@@ -53,6 +54,7 @@ const bestProductSelling = new Swiper('.swiper-best-selling', {
 
 const offtermotan = new Swiper('.swiper-offer-motan', {
   lazy: true,
+  spaceBetween: 30,
   slidesPerView: 7.5,
   keyboard: {
     enabled: true,
@@ -62,6 +64,16 @@ const offtermotan = new Swiper('.swiper-offer-motan', {
 const winterSkinCare = new Swiper('.swiper-winter-skin-care', {
   lazy: true,
   slidesPerView: 7.5,
+  spaceBetween: 30,
+  keyboard: {
+    enabled: true,
+  },
+});
+
+const popularPerfumes = new Swiper('.swiper-popular-perfumes', {
+  lazy: true,
+  slidesPerView: 7.5,
+  spaceBetween: 30,
   keyboard: {
     enabled: true,
   },
