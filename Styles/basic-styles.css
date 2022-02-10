@@ -26,7 +26,7 @@
     margin: 0;
     padding: 0;
     border: none;
-    font-family: "vazir";
+    font-family: "Vazir-regular";
 }
 
 html, body, div, span, applet, object, iframe,
@@ -45,7 +45,7 @@ time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: "vazir";
+    font-family: "Vazir-regular";
     vertical-align: baseline;
 }
 body {
@@ -119,7 +119,7 @@ header {
 .header__colThird {
     display: flex;
     align-items: center;
-    font-family: "Vazir-medium";
+    font-family: "Vazir-regular";
 }
 .header__colFirst a,
 .header__colSecond a,
@@ -162,6 +162,15 @@ header {
     animation: none;
     background-color: #EF233C;
     color: #fff;
+}
+.black__back.show {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 100;
 }
 .search_input {
     width: 450px;
@@ -309,7 +318,7 @@ footer hr {
     align-items: center;
     background-color: #f9f9f9;
     font-size: 18px;
-    font-family: "Vazir-medium";
+    font-family: "Vazir-regular";
     height: 60px;
 }
 .showMeMore {
@@ -365,7 +374,7 @@ footer hr {
     color: rgb(114, 114, 114);
     font-size: 22px;
     border-radius: 30px 3px 3px 3px;
-    font-family: "Vazir-bold";
+    font-family: "Vazir-regular";
     font-weight: bolder;
 }
 .column_section {

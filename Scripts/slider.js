@@ -21,7 +21,7 @@ const offroozSwiper = new Swiper('.swiper-offrooz', {
   loop: true,
   lazy: true,
   autoplay: {
-      delay: 4000,
+      delay: 2500,
       disableOnInteraction: false,
   },
   keyboard: {
