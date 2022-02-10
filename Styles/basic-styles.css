@@ -243,3 +243,168 @@ header {
         background-color: #EF233C;
     }
 }
+footer {
+    background-color: #f9f9f9;
+    width: 100%;
+    margin-top: 3rem;
+}
+.footer__colFirst {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    font-family: "Vazir-regular";
+} 
+.footer__feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 50px;
+    color: #8D99AE;
+}
+.footer__feature img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 18px;
+}
+footer hr {
+    height: 1px;
+    background: rgb(223, 223, 223);
+    width: 97%;
+    margin: 0 auto;
+}
+
+.footer__colSecond {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0 30px 0;
+}
+.footer__aboutUs {
+    width: 100%;
+    margin: 0 30px;
+    overflow: hidden;
+    height: 150px;
+    transition: .2s ease;
+}
+.footer__aboutUs.show {
+    height: 570px;
+}
+.aboutUs__description__title {
+    font-size: 19px;
+    color: rgb(114, 114, 114);
+    margin: 25px 0 15px 0;
+}
+.aboutUs__description {
+    color: #707070;
+    font-family: "Vazir-regular";
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.show_more {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    font-size: 18px;
+    font-family: "Vazir-medium";
+    height: 60px;
+}
+.showMeMore {
+    color: #fff;
+    background-color: #ff6174;
+    padding: 14px 14px;
+    border-radius: 15px;
+    user-select: none;
+    cursor: pointer;
+    transition: .3s;
+    margin-top: 20px;
+}
+.showMeMore:hover {
+    background-color: #D90429;
+}
+.column_section {
+    margin: 0 3rem;
+}
+.footer__colThird {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 30px 0;
+    height: 200px;
+}
+.social_networks {
+    width: 13rem;
+
+}
+.social_network_icon {
+    font-size: 3rem;
+    margin: 0.5rem;
+}
+#facebook-icon {
+    color: #3b5998;
+}
+#instagram-icon {
+    color: #cd486b;
+}
+#discord-icon {
+    color: #5865F2;
+}
+#telegram-icon {
+    color: #229ED9;
+}
+.column_1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+.column_section_tit {
+    margin-bottom: 10px;
+    color: rgb(114, 114, 114);
+    font-size: 22px;
+    border-radius: 30px 3px 3px 3px;
+    font-family: "Vazir-bold";
+    font-weight: bolder;
+}
+.column_section {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 0 0;
+}
+.other_pgs {
+    font-size: 20px;
+    padding: 5px 5px;
+    margin: 5px 0;
+    cursor: pointer;
+    color: gray;
+}
+.other_pgs:hover {
+    color: #000;
+}
+.honors {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.honor {
+    width: 70px;
+    height: 70px;
+    margin: 15px;
+}
+
+.footer__colFifth {
+    background-color: rgb(80, 80, 80);
+    padding: 15px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.copyright span {
+    background-color: #fff;
+    padding: 1px 8px;
+    color: black;
+    border-radius: 8px;
+}
