@@ -38,3 +38,9 @@ setInterval(() => {
     countValueSeconds.textContent = numberToPersian(seconds);
 
 }, 1000);
+
+let scrollToTop = document.querySelector(".scroll-to-top-div");
+
+scrollToTop.addEventListener("click" , () => {
+    window.scrollTo({ top: 0, behavior:'smooth' })
+})
