@@ -343,7 +343,7 @@
 /* Best selling product */
 
 .best-selling-product {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .best-selling-product-header {
@@ -415,7 +415,7 @@
 }
 
 .card:hover {
-  border: 1px solid #e0e0e0;
+  box-shadow: 0px 0px 2px #909090;
 }
 
 .img {
@@ -467,8 +467,8 @@
   font-size: 18px;
   border: none;
   position: absolute;
-  top: 50px;
-  right: 30px;
+  top: 30px;
+  right: 10px;
   border: 1px solid #d90429;
   opacity: 0;
 }
@@ -481,7 +481,7 @@
 /* Section Offer Motan */
 
 .offer-motan {
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .offer-motan-header {
@@ -522,7 +522,7 @@
 /* Winter Skin Care */
 
 .winter-skin-care {
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .winter-skin-care-header {
@@ -594,14 +594,8 @@
 
 /* Popular perfumes */
 
-.swiper-popular-perfumes {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .popular-perfumes {
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .popular-perfumes-header {
@@ -634,6 +628,47 @@
 }
 
 .popular-perfumes-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Suitable for hair */
+
+.suitable-for-hair {
+  margin-top: 30px;
+}
+
+.suitable-for-hair-header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 0 30px;
+}
+
+.suitable-for-hair-title {
+  color: #585858;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.suitable-for-hair-content {
+  margin-top: 20px;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.swiper-suitable-for-hair {
+  display: flex;
+  padding: 20px !important;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.suitable-for-hair-slide {
   display: flex;
   justify-content: center;
   align-items: center;
